@@ -15,26 +15,12 @@ class _WelcomePageState extends State<WelcomePage> {
       body: Container(
         child: SafeArea(
             child: Container(
-          height: double.infinity,
-          width: double.infinity,
           color: Colors.transparent,
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 50),
-              child: Text(
-                "Blood Donation Champ",
-                style: TextStyle(fontSize: 20, color: Colors.white),
-              ),
-            ),
-            Expanded(
-              flex: 5,
-              child: Text(
-                "Welcome to Blood Donation Application ",
-                style: TextStyle(fontSize: 15, color: Colors.white),
-              ),
-            ),
-            ElevatedButton(onPressed: () {}, child: Text("Let's Start"))
-          ]),
+          child: Container(
+            width: 200,
+            height: 100,
+            color: Colors.white,
+          ),
         )),
       ),
     );
