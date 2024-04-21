@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -33,14 +34,28 @@ class _WelcomePageState extends State<WelcomePage> {
                       style: TextStyle(fontSize: 30, color: Colors.white),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 20),
-                    child: Container(
-                      width: 200,
-                      height: 200,
-                      color: Colors.white,
-                      child: Image.asset("assets/images/bda1.png"),
-                    ),
+                  CarouselSlider(
+                    options: CarouselOptions(height: 200.0),
+                    items: [1, 2, 3, 4, 5].map((i) {
+                      return Builder(
+                        builder: (BuildContext context) {
+                          return Container(
+                            width: MediaQuery.of(context).size.width,
+                            margin: EdgeInsets.symmetric(horizontal: 5.0),
+                            decoration: BoxDecoration(color: Colors.amber),
+                            child: Padding(
+                              padding: const EdgeInsets.only(bottom: 20),
+                              child: Container(
+                                width: 200,
+                                height: 200,
+                                color: Colors.white,
+                                child: Image.asset("assets/images/bda1.png"),
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    }).toList(),
                   ),
                   Text(
                     "Welcome to Bload donation champ application",
