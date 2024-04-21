@@ -17,9 +17,15 @@ class _WelcomePageState extends State<WelcomePage> {
             child: Container(
           color: Colors.transparent,
           child: Container(
-            width: 200,
-            height: 100,
-            color: Colors.white,
+            width: double.infinity,
+            height: double.infinity,
+            margin: EdgeInsets.symmetric(vertical: 10),
+            color: Colors.blue,
+            alignment: Alignment.center,
+            child: Text(
+              "Single Child Container",
+              style: TextStyle(fontSize: 30, color: Colors.white),
+            ),
           ),
         )),
       ),
