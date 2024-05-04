@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1045938620720",
+    "project_id": "donorbuddy-83cb3",
+    "storage_bucket": "donorbuddy-83cb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045938620720:android:693b9f7b907d071c3ae0f5",
+        "android_client_info": {
+          "package_name": "com.example.bda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5iCzcUeWOYQobj27qoeL3dYNagf5r4O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
