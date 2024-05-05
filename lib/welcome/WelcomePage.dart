@@ -1,6 +1,8 @@
 import 'dart:convert';
 
+import 'package:bda/controllers/firebase/auth/FirebaseAuthService.dart';
 import 'package:bda/models/album.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:http/http.dart' as http;
@@ -13,6 +15,7 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
+  final FirebaseAuthService _auth = FirebaseAuthService();
   List<Album> globalAlbums = [];
   Future<http.Response> fetchAlbums() async {
     var response = await http
@@ -33,7 +36,41 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   void initState() {
     fetchAlbums();
+    _signIn();
+    _createNewUser();
     super.initState();
+  }
+
+  void _signUp() async {
+    String email = "abc@g.com";
+    String password = "123456";
+    User? _user = await _auth.signUpWithEmailAndPassword(email, password);
+    if (_user != null) {
+      print("User created");
+    }
+  }
+
+  void _createNewUser() async {
+    var user = <String, dynamic>{
+      "first": "Alan",
+      "middle": "Mathison",
+      "last": "Turing",
+      "email": "asdf@g.com",
+      "password": "123456",
+      "born": 1912
+    };
+    var id = await _auth.createNewUserProfile(user);
+    print(id);
+  }
+
+  void _signIn() async {
+    String email = "abc@g.com";
+    String password = "123456";
+    User? _user = await _auth.signInWithEmailAndPassword(email, password);
+    if (_user != null) {
+      print("User logged in");
+      print("User logged in");
+    }
   }
 
   @override
