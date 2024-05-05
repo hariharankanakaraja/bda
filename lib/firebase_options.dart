@@ -41,47 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCzMFKOadBS9xbT7r-fpQvPYEP9RySjgBo',
-    appId: '1:698030383095:web:6c2f463bd1e5393d8998f2',
-    messagingSenderId: '698030383095',
-    projectId: 'abc-test-8a172',
-    authDomain: 'abc-test-8a172.firebaseapp.com',
-    storageBucket: 'abc-test-8a172.appspot.com',
+    apiKey: 'AIzaSyCStTKgE1-M2Naey-0FzyilkHcqj2-Mp0w',
+    appId: '1:1045938620720:web:44254cf2685b4e0a3ae0f5',
+    messagingSenderId: '1045938620720',
+    projectId: 'donorbuddy-83cb3',
+    authDomain: 'donorbuddy-83cb3.firebaseapp.com',
+    storageBucket: 'donorbuddy-83cb3.appspot.com',
+    measurementId: 'G-SJXDV3S2V7',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAPruwW7padndYfEa13oLfF34dtwe4EfXU',
-    appId: '1:698030383095:android:b85d395dbc3032288998f2',
-    messagingSenderId: '698030383095',
-    projectId: 'abc-test-8a172',
-    storageBucket: 'abc-test-8a172.appspot.com',
+    apiKey: 'AIzaSyA5iCzcUeWOYQobj27qoeL3dYNagf5r4O8',
+    appId: '1:1045938620720:android:693b9f7b907d071c3ae0f5',
+    messagingSenderId: '1045938620720',
+    projectId: 'donorbuddy-83cb3',
+    storageBucket: 'donorbuddy-83cb3.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC1NdkTFxXs0npu01ajI01YUSaHBWIouc4',
-    appId: '1:698030383095:ios:0362135e1373a6028998f2',
-    messagingSenderId: '698030383095',
-    projectId: 'abc-test-8a172',
-    storageBucket: 'abc-test-8a172.appspot.com',
+    apiKey: 'AIzaSyC2sIfUntgFdjpbCMtVDc33EUQLQdODkW0',
+    appId: '1:1045938620720:ios:816444c6abb773c03ae0f5',
+    messagingSenderId: '1045938620720',
+    projectId: 'donorbuddy-83cb3',
+    storageBucket: 'donorbuddy-83cb3.appspot.com',
     iosBundleId: 'com.example.bda',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC1NdkTFxXs0npu01ajI01YUSaHBWIouc4',
-    appId: '1:698030383095:ios:0362135e1373a6028998f2',
-    messagingSenderId: '698030383095',
-    projectId: 'abc-test-8a172',
-    storageBucket: 'abc-test-8a172.appspot.com',
+    apiKey: 'AIzaSyC2sIfUntgFdjpbCMtVDc33EUQLQdODkW0',
+    appId: '1:1045938620720:ios:816444c6abb773c03ae0f5',
+    messagingSenderId: '1045938620720',
+    projectId: 'donorbuddy-83cb3',
+    storageBucket: 'donorbuddy-83cb3.appspot.com',
     iosBundleId: 'com.example.bda',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCzMFKOadBS9xbT7r-fpQvPYEP9RySjgBo',
-    appId: '1:698030383095:web:512957df5f5c60d78998f2',
-    messagingSenderId: '698030383095',
-    projectId: 'abc-test-8a172',
-    authDomain: 'abc-test-8a172.firebaseapp.com',
-    storageBucket: 'abc-test-8a172.appspot.com',
+    apiKey: 'AIzaSyCStTKgE1-M2Naey-0FzyilkHcqj2-Mp0w',
+    appId: '1:1045938620720:web:aa25dd0fe594b9fa3ae0f5',
+    messagingSenderId: '1045938620720',
+    projectId: 'donorbuddy-83cb3',
+    authDomain: 'donorbuddy-83cb3.firebaseapp.com',
+    storageBucket: 'donorbuddy-83cb3.appspot.com',
+    measurementId: 'G-65GBB900GY',
   );
 
 }
