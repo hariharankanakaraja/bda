@@ -45,6 +45,7 @@ dependencies:
   firebase_storage: ^11.6.9
   firebase_analytics: ^10.8.9
   cloud_firestore: ^4.15.8
+  geolocator: ^11.0.0
   # cloud_firestore: ^4.15.8
 
 dev_dependencies:
